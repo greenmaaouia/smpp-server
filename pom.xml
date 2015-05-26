@@ -1,7 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
-	<groupId>net.gescobar</groupId>
+
+    <parent>
+        <artifactId>mokai-parent</artifactId>
+        <groupId>org.mokai</groupId>
+        <version>0.11.7-SNAPSHOT</version>
+    </parent>
+
 	<artifactId>smpp-server</artifactId>
 	
 	<name>SMPP Server</name>
@@ -15,9 +20,9 @@
 			<version>5.0.6</version>
 		</dependency>
 		<dependency>
-			<groupId>net.gescobar</groupId>
+			<groupId>org.mokai</groupId>
 			<artifactId>jmx-annotations</artifactId>
-			<version>1.0.0</version>
+
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -110,22 +115,6 @@
 		</plugins>
 	</build>
 	
-	<repositories>
-		<repository>
-			<id>elibom</id>
-			<url>http://repository.elibom.net/nexus/content/repositories/releases</url>
-		</repository>
-	</repositories>
-	
-	<distributionManagement>  
- 		<repository>  
-  			<id>elibom</id>   
-  			<url>http://repository.elibom.net/nexus/content/repositories/releases</url>  
- 		</repository>  
- 		<snapshotRepository>  
-  			<id>elibom</id>  
-  			<url>http://repository.elibom.net/nexus/content/repositories/snapshots</url>  
- 		</snapshotRepository>  
-	</distributionManagement>
+
 	
 </project>
